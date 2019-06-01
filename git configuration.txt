@@ -1,0 +1,45 @@
+============SSH Key Error (git@github.com: Permission denied (publickey))=================
+#generate ssh key 
+ssh-keygen -t rsa -b 4096 -C "pawan191994@gmail.com"
+
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+#copy public key
+clip < ~/.ssh/id_rsa.pub
+ 
+Git >> Settings >> SSH and GPG keys >> New SSH key >> (tital any name) paste key >> Add SSH key
+
+============GIT Commands==================================================================
+
+# Pull data from git
+ git clone git@github.com:pawanshaiitd/Books.git
+
+# check diff b/w git and local repo
+git status
+
+# add file to git
+git add the_c_programming_language_dennis_ritchie.pdf
+# to add everything
+git add -a 
+git add .
+
+git commit -m "C Programming Book"
+git push
+
+# to pull new data in already clonned work space
+git pull
+
+#Merge Conflicts
+when you pull there mifgt be conflicts
+remove the conflicts manually 
+remove conflict helper lines
+Commit your changes
+
+
+
+
+
+
