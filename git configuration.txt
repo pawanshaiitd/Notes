@@ -23,7 +23,7 @@ git status
 # add file to git
 git add the_c_programming_language_dennis_ritchie.pdf
 # to add everything
-git add -a 
+git add -A 
 git add .
 
 git commit -m "C Programming Book"
